@@ -5,7 +5,7 @@ def most_wanted_letter(text):
 
     letter_counts = {}
     for char in text:
-        if char in string.ascii_letters:  
+        if char.isalpha():  
             letter_counts[char] = letter_counts.get(char, 0) + 1
 
     if not letter_counts:
@@ -24,3 +24,9 @@ def most_wanted_letter(text):
 print(most_wanted_letter("aAaahhh////"))
 print(most_wanted_letter("....12345%4(%7535/////..."))
 print(most_wanted_letter(""))
+print(most_wanted_letter("......HeLlo......"))
+print(most_wanted_letter("String ssss ttAAds TTTTTTT"))
+print(most_wanted_letter("!@#$%^&*(*&^%$#@@#$%^&*DFGBQQQQQQQQqqqrrrrrrrr"))
+print(most_wanted_letter("!@#$%^&*543234%^&*%$#@345677^%$#@#$%^&"))
+print(most_wanted_letter("....пррррривет..."))
+print(most_wanted_letter("....Tschüüüüüüüss!..."))
